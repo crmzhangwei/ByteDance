@@ -1,22 +1,22 @@
 {
-    "name": "otkurbiz\/bytedance",
+    "name": "crmzhangwei\/bytedance",
     "description": "sdk for bytedance (douyin, toutiao, huoshan, xigua)",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alim",
-            "email": "alim@bulutbazar.com"
+            "name": "zhangwei",
+            "email": "ndzhangwei16@163.com"
         }
     ],
     "require": {
         "psr/simple-cache": "^1.0",
-        "illuminate/container": "5.2.32",
+        "illuminate/container": "^5.0",
         "guzzlehttp/guzzle": "~6.2.1",
         "monolog/monolog": "^1.17",
-        "doctrine/cache": "~1.4",
-        "pimple/pimple": "3.0.2",
-        "symfony/psr-http-message-bridge": "1.0",
-        "symfony/http-foundation": "3.0.9"
+        "doctrine/cache": "^1.4",
+        "pimple/pimple": "^3.0.2",
+        "symfony/psr-http-message-bridge": "^1.0",
+        "symfony/http-foundation": "^3.0.9"
     },
     "autoload": {
         "psr-4": {
