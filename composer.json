@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OtkurBiz\\ByteDance\\ServiceProvider"
+                "Crmzhangwei\\ByteDance\\ServiceProvider"
             ],
             "aliases": {
                 "ByteDance": "OtkurBiz\\ByteDance\\Facade"
