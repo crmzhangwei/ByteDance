@@ -1,6 +1,6 @@
 <?php
 
-namespace OtkruBiz\ByteDance;
+namespace Crmzhangwei\ByteDance;
 
 use OtkurBiz\ByteDance\Factory;
 use OtkurBiz\ByteDance\MiniProgram\Application as MiniProgram;
