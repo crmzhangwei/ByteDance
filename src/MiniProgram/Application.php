@@ -21,6 +21,7 @@ use OtkurBiz\ByteDance\Kernel\ServiceContainer;
  * * @property \OtkurBiz\ByteDance\MiniProgram\Encryptor $encryptor
  * @property \OtkurBiz\ByteDance\MiniProgram\QRCode\Client $qrcode
  * @property \OtkurBiz\ByteDance\MiniProgram\Message\Client $message
+ * @property \OtkurBiz\ByteDance\MiniProgram\Security\Client $Security
  */
 class Application extends ServiceContainer
 {
@@ -32,5 +33,6 @@ class Application extends ServiceContainer
         KVData\ServiceProvider::class,
         QRCode\ServiceProvider::class,
         Message\ServiceProvider::class,
+        Security\ServiceProvider::class,
     ];
 }
