@@ -160,8 +160,21 @@ class BaseClient
         if (empty($this->middlewares)) {
             $this->registerHttpMiddlewares();
         }
-        $options["headers"]['X-Token'] = $this->getAccessToken();
+        
+        if(strpos($url,"antidirt")!=false){
+
+            $request =[];
+            if ($this->accessToken) {
+                $request = $this->accessToken->getToken();
+                $options["headers"]['X-Token'] = $request['access_token'];
+            }
+          
+        }
+       
+        
         $response = $this->performRequest($url, $method, $options);
+
+ 
 
         return $returnRaw ? $response : $this->castResponseToType($response, $this->app->config->get('response_type'));
     }

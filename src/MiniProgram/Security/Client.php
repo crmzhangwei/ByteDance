@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\ByteDance\MiniProgram\QRCode;
+namespace OtkurBiz\ByteDance\MiniProgram\Security;
 
 use OtkurBiz\ByteDance\Kernel\BaseClient;
 
@@ -28,6 +28,6 @@ class Client extends BaseClient
      */
     public function create(array $tasks)
     {
-        return $this->httpPost('api/v2/tags/text/antidirt', ['tasks'=>$tasks]);
+        return $this->httpPostJson('api/v2/tags/text/antidirt', ['tasks'=>$tasks]);
     }
 }
