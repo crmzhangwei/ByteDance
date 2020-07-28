@@ -13,7 +13,7 @@
 ## Installation
 
 ```shell
-$ composer require "otkurbiz/bytedance" -vvv
+$ composer require "crmzhangwei/bytedance" -vvv
 ```
 
 ## Usage
